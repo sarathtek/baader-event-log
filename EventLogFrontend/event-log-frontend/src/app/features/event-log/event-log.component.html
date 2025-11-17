@@ -1,0 +1,24 @@
+<div style="padding: 20px;">
+  <h1>{{ title }}</h1>
+  <p>Events from the last 5 minutes</p>
+
+  <div *ngIf="loading">Loading events...</div>
+
+  <table *ngIf="!loading">
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Severity</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let e of events">
+        <td>{{ e.timestamp | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+        <td>{{ e.severity }}</td>
+        <td>{{ e.message }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

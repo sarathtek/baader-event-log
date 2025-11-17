@@ -1,0 +1,6 @@
+@EventLogBackend_HostAddress = http://localhost:5211
+
+GET {{EventLogBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
