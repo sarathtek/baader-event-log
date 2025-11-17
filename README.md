@@ -27,8 +27,11 @@ Note: If you encounter SSL certificate warnings, run: dotnet dev-certs https --t
 ### **Frontend (Angular)**
 
 cd EventLogFrontend/event-log-frontend
+
 npm install
+
 ng serve --port 4200
 
 Open the UI at:
+
 http://localhost:4200
